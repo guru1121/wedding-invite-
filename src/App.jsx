@@ -1,6 +1,7 @@
 import React from "react";
 import Fireworks from "./Fireworks";
-import { EmojiPeople } from "@mui/icons-material";
+import CelebrationIcon from '@mui/icons-material/Celebration';
+
 
 const events = [
   {
@@ -67,9 +68,9 @@ const App = () => {
         <h1 className="display-3 fw-bold mb-4">💍 You're Invited to Our Wedding 💐</h1>
 
         <div className="d-flex justify-content-center align-items-center gap-4 mb-4">
-          <EmojiPeople fontSize="large" />
+          <CelebrationIcon fontSize="large" />
           <h2 className="fw-semibold">👰 Bride ❤️ Groom 🤵</h2>
-          <EmojiPeople fontSize="large" />
+          <CelebrationIcon fontSize="large" />
         </div>
 
         <p className="lead fs-4 mb-4">
