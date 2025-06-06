@@ -80,3 +80,9 @@ body {
   50% { transform: rotate(10deg); }
   100% { transform: rotate(-100deg); }
 }
+
+/* Ensure dropdown auto-sizes to content */
+.dropdown-menu {
+  min-width: unset !important;
+  width: 90px;
+}

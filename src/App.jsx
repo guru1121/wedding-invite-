@@ -17,10 +17,10 @@ const App = () => {
 
 
       {/* Language Selector */}
-      <div className="position-absolute top-0 end-0 m-3 z-3">
+      <div className="position-absolute top-0 end-0 me-2 z-3">
         <div className="dropdown">
           <button
-            className="btn btn-dark dropdown-toggle"
+            className="btn btn-dark dropdown-toggle px-3 py-2"
             type="button"
             id="langDropdown"
             data-bs-toggle="dropdown"
@@ -33,18 +33,19 @@ const App = () => {
             aria-labelledby="langDropdown"
           >
             <li>
-              <button className="dropdown-item" onClick={() => changeLanguage('en')}>
+              <button className="dropdown-item text-center" onClick={() => changeLanguage('en')}>
                 En
               </button>
             </li>
             <li>
-              <button className="dropdown-item" onClick={() => changeLanguage('hi')}>
+              <button className="dropdown-item text-center" onClick={() => changeLanguage('hi')}>
                 Hi
               </button>
             </li>
           </ul>
         </div>
       </div>
+
 
 
       <div
