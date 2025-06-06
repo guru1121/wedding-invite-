@@ -68,9 +68,9 @@ const App = () => {
         <h1 className="display-3 fw-bold mb-4">💍 You're Invited to Our Wedding 💐</h1>
 
         <div className="d-flex justify-content-center align-items-center gap-4 mb-4">
-          <CelebrationIcon fontSize="large" />
+          <CelebrationIcon className="tilt-icon" fontSize="large" />
           <h2 className="fw-semibold">👰 Bride ❤️ Groom 🤵</h2>
-          <CelebrationIcon fontSize="large" />
+          <CelebrationIcon className="tilt-icon" fontSize="large" />
         </div>
 
         <p className="lead fs-4 mb-4">

@@ -67,3 +67,16 @@ body {
   opacity: 0;
   transform: scale(0.9);
 }
+
+
+.tilt-icon {
+  display: inline-block;
+  animation: tilt 1.2s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes tilt {
+  0% { transform: rotate(-120deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(-120deg); }
+}
