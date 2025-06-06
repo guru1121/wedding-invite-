@@ -1,6 +1,6 @@
 import React from "react";
 import Fireworks from "./Fireworks";
-import { Favorite, EmojiPeople } from "@mui/icons-material";
+import { EmojiPeople } from "@mui/icons-material";
 
 const events = [
   {
@@ -81,56 +81,44 @@ const App = () => {
       </div>
 
       {/* Events Section */}
-      <div
-        className="container-fluid py-5"
-        style={{ backgroundColor: "#fff", color: "#000", zIndex: 1, position: "relative" }}
-      >
-        <div className="container">
-          <h2 className="mb-4 fw-bold text-center">💫 Wedding Ceremonies & Rituals</h2>
-          <div className="row justify-content-center g-4">
-            {events.map((event, idx) => (
-              <div className="col-md-6" key={idx}>
-                <div
-                  className="p-4 h-100 event-card"
-                  style={{
-                    backgroundColor: event.bgColor,
-                    color: "#212529",
-                  }}
-                >
-                  <h4 className="fw-bold">{event.title}</h4>
-                  <p className="mb-1"><strong>Date:</strong> {event.date}</p>
-                  <p className="mb-1"><strong>Time:</strong> {event.time}</p>
-                  <p className="mb-1"><strong>Venue:</strong> {event.venue}</p>
-                  <p className="mt-2">{event.description}</p>
-                  {event.mapLink && (
-                    <a
-                      href={event.mapLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-sm btn-primary mt-2"
-                    >
-                      📍 View Location
-                    </a>
-                  )}
-                </div>
+      <section className="container py-5 section-animated">
+        <h2 className="mb-5 display-5 fw-bold text-decoration-underline">Wedding Events</h2>
+        <div className="row justify-content-center g-4">
+          {events.map((event, idx) => (
+            <div className="col-md-6" key={idx}>
+              <div className="p-4 h-100 event-card">
+                <h4 className="fw-bold">{event.title}</h4>
+                <p className="mb-1"><strong>Date:</strong> {event.date}</p>
+                <p className="mb-1"><strong>Time:</strong> {event.time}</p>
+                <p className="mb-1"><strong>Venue:</strong> {event.venue}</p>
+                <p className="mt-2">{event.description}</p>
+                {event.mapLink && (
+                  <a
+                    href={event.mapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-sm btn-primary mt-2"
+                  >
+                    📍 View Location
+                  </a>
+                )}
               </div>
-
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </div>
-        {/* Footer */}
-    <footer
-      className="text-center text-white py-3 mt-2"
-      style={{
-    backgroundColor: "#000",  // solid black
-    color: "#fff",             // white text
-    position: "relative",
-    zIndex: 2
-  }}
-    >
-      &copy; {new Date().getFullYear()} Gurunand Mourya. All rights reserved.
-    </footer>
+      </section>
+      {/* Footer */}
+      <footer
+        className="text-center text-white py-3 mt-2"
+        style={{
+          backgroundColor: "#000",  // solid black
+          color: "#fff",             // white text
+          position: "relative",
+          zIndex: 2
+        }}
+      >
+        &copy; {new Date().getFullYear()} Gurunand Mourya. All rights reserved.
+      </footer>
     </div>
   );
 };

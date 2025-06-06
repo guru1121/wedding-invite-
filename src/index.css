@@ -6,22 +6,37 @@ body {
 }
 
 /* Smooth fade-in + scale animation */
-@keyframes fadeInUp {
+@keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px) scale(0.95);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
 .event-card {
-  animation: fadeInUp 0.8s ease-in-out;
+  animation: fadeUp 0.8s ease-in-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-left: 6px solid #ff7f50;
   border-radius: 20px;
+  border-left: 6px solid #ff7f50;
+  background-color: #fff;
+  color: #212529;
 }
 
 .event-card:hover {
@@ -29,7 +44,26 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.row.justify-content-center > .col-md-6:last-child {
-  margin-left: auto;
-  margin-right: auto;
+/* Add delay for staggered effect */
+.event-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.event-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.event-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.event-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.event-card:nth-child(5) {
+  animation-delay: 1s;
+}
+
+/* Section animation */
+.section-animated {
+  animation: fadeInScale 1s ease-in-out forwards;
+  opacity: 0;
+  transform: scale(0.9);
 }
