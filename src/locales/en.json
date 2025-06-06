@@ -1,0 +1,44 @@
+{
+  "invitationTitle": "💍 You're Invited to Wedding 💐",
+  "brideGroom": "👰 Bride ❤️ Groom 🤵",
+  "intro": "Join us in celebrating our Indian wedding filled with beautiful Hindu rituals, love, colors, and joy. 🇮🇳🎊",
+  "weddingEvents": "Wedding Events",
+  "viewLocation": "📍 View Location",
+  "events": [
+    {
+      "title": "💃 Mehndi Ceremony",
+      "date": "13th July 2025",
+      "time": "4:00 PM",
+      "venue": "Bride’s Residence, Jaipur",
+      "description": "A colorful celebration with music, dance, and beautiful henna designs."
+    },
+    {
+      "title": "🌼 Haldi Ceremony",
+      "date": "14th July 2025",
+      "time": "10:00 AM",
+      "venue": "Groom’s Residence, Jaipur",
+      "description": "A traditional haldi ritual to bless the couple."
+    },
+    {
+      "title": "🐎 Baarat",
+      "date": "15th July 2025",
+      "time": "5:00 PM",
+      "venue": "From Groom’s Residence to The Royal Palace",
+      "description": "The groom's grand procession with dancing and fun!"
+    },
+    {
+      "title": "💍 Wedding Ceremony",
+      "date": "15th July 2025",
+      "time": "7:00 PM onwards",
+      "venue": "The Royal Palace, Jaipur",
+      "description": "Join us as we tie the sacred knot with love and tradition."
+    },
+    {
+      "title": "🎊 Reception",
+      "date": "16th July 2025",
+      "time": "7:00 PM onwards",
+      "venue": "The Grand Ballroom, Jaipur Marriott",
+      "description": "Celebrate our new beginning with music, food, and joy."
+    }
+  ]
+}
